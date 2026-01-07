@@ -1,8 +1,8 @@
 import Link from 'next/link';
-import { db } from '../../../lib/db/store';
-import { Button } from '../../../components/ui/Button';
-import { CareTimeline } from '../../../components/features/CareTimeline';
-import { WeatherWidget } from '../../../components/features/WeatherWidget';
+import { db } from '@/lib/db/store';
+import { Button } from '@/components/ui/Button';
+import { CareTimeline } from '@/components/features/CareTimeline';
+import { WeatherWidget } from '@/components/features/WeatherWidget';
 
 export default async function PlantDetailPage({ params }: { params: Promise<{ id: string }> }) {
     const { id } = await params;

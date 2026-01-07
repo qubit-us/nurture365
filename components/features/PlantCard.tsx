@@ -1,6 +1,6 @@
-import { Card } from '../ui/Card';
-import { Button } from '../ui/Button';
-import { UserPlant } from '../../lib/db/store';
+import { Card } from '@/components/ui/Card';
+import { Button } from '@/components/ui/Button';
+import { UserPlant } from '@/lib/db/store';
 import Link from 'next/link';
 
 export const PlantCard = ({ plant }: { plant: UserPlant }) => {

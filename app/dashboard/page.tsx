@@ -1,5 +1,5 @@
-import { db } from '../../lib/db/store';
-import { PlantCard } from '../../components/features/PlantCard';
+import { db } from '@/lib/db/store';
+import { PlantCard } from '@/components/features/PlantCard';
 
 export default function DashboardPage() {
     const plants = db.getPlants();
