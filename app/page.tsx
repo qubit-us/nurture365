@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
@@ -9,7 +10,7 @@ export default function Home() {
         <nav className="flex gap-4">
           <a href="#how-it-works">How It Works</a>
           <a href="/nurseries">For Nurseries</a>
-          <Button>Try it free</Button>
+          <Link href="/dashboard"><Button>Try it free</Button></Link>
         </nav>
       </header>
 
@@ -23,8 +24,8 @@ export default function Home() {
             Nurture365 helps every plant thrive after purchase — with climate-aware, personalized care.
           </p>
           <div className="flex gap-4">
-            <Button size="lg" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>Try it free</Button>
-            <Button variant="secondary">For Nurseries</Button>
+            <Link href="/dashboard"><Button size="lg" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>Try it free</Button></Link>
+            <Link href="/nurseries"><Button variant="secondary">For Nurseries</Button></Link>
           </div>
         </section>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 
@@ -8,7 +9,7 @@ export default function NurseriesPage() {
                 <a href="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--color-primary)' }}>Nurture365 🌿</a>
                 <nav className="flex gap-4">
                     <a href="/#how-it-works">How It Works</a>
-                    <button className="btn btn-outline" style={{ border: '1px solid var(--color-primary)', color: 'var(--color-primary)' }}>Consumer App</button>
+                    <Link href="/"><button className="btn btn-outline" style={{ border: '1px solid var(--color-primary)', color: 'var(--color-primary)' }}>Consumer App</button></Link>
                 </nav>
             </header>
 
@@ -20,7 +21,7 @@ export default function NurseriesPage() {
                     <p style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', maxWidth: '700px', margin: '0 auto 2rem' }}>
                         Reduce returns, save staff time, and build customer loyalty with our post-purchase care platform.
                     </p>
-                    <Button size="lg">Request Early Access</Button>
+                    <Link href="/admin"><Button size="lg">Request Early Access</Button></Link>
                 </section>
 
                 <section className="grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginTop: '4rem' }}>
